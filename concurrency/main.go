@@ -9,8 +9,8 @@ func main() {
 	fmt.Println("Goroutine Tutorial")
 
 	// sequential exceution of our compute function
-	compute(10)
-	compute(10)
+	go compute(10)
+	go compute(10)
 
 	// we scan fmt for input and print that to our console
 	var input string
